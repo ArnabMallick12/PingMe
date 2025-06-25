@@ -12,7 +12,7 @@ import { app,server } from '../lib/socket.js';
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:5173',
+  origin: process.env.CLIENT_URL || 'https://ping-me-navy.vercel.app/',
   credentials: true, // Allow credentials to be sent
 }));
 
