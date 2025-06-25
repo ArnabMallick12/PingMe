@@ -32,7 +32,7 @@ const Login = () => {
       await login(form);
       navigate('/');
     } catch (err) {
-      setError(err.message || 'Login failed');
+      setError(err.response.data.message || 'Login failed');
     }
   };
 

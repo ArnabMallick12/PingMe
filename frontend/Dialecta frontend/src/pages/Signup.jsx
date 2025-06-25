@@ -33,7 +33,7 @@ const Signup = () => {
       await signup(form);
       navigate('/login');
     } catch (err) {
-      setError(err.message || 'Signup failed');
+      setError(err.response.data.message || 'Signup failed');
     }
   };
 

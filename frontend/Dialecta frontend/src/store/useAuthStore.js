@@ -4,7 +4,7 @@ import Signup from '../pages/Signup';
 import toast from 'react-hot-toast';
 import { io } from 'socket.io-client';
 
-const SOCKET_URL =  'http://localhost:5000';
+const SOCKET_URL =  'https://pingme-lyz7.onrender.com';
 
 
 export const useAuthStore = create((set, get) => ({
