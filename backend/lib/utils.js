@@ -10,7 +10,7 @@ export const generateToken = (userId,res) => {
         maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
         httpOnly: true,
         secure: true, // Set to true if using https
-        sameSite: 'strict', // CSRF protection
+        sameSite: 'none', 
     })
 
     return token;
